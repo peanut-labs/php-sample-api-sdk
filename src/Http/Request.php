@@ -1,6 +1,8 @@
 <?php
 
-namespace Peanutlabs\SampleApiSDK\Http;
+namespace PeanutLabs\SampleApiSDK\Http;
+
+use PeanutLabs\SampleApiSDK\Http\Curl;
 
 class Request {
   
@@ -113,5 +115,3 @@ class Request {
   }
   
 }
-
-require_once __DIR__.'/Curl.php';

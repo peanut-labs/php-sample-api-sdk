@@ -1,6 +1,6 @@
 <?php
 
-namespace Peanutlabs\SampleApiSDK\Http;
+namespace PeanutLabs\SampleApiSDK\Http;
 
 class Curl {
   /**

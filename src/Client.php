@@ -1,9 +1,10 @@
 <?php
 
-namespace Peanutlabs\SampleApiSDK;
+namespace PeanutLabs\SampleApiSDK;
 use \PeanutLabs\SampleApiSDK\Http\Request;
 use \PeanutLabs\SampleApiSDK\Http\Response;
-use \Peanutlabs\SampleApiSDK\Http\Auth\Hmac;
+use \PeanutLabs\SampleApiSDK\Http\Auth\Hmac;
+use \PeanutLabs\SampleApiSDK\RequestException;
 
 class Client {
   
@@ -72,8 +73,3 @@ class Client {
   }
   
 }
-
-require_once __DIR__.'/Exception/RequestException.php';
-require_once __DIR__.'/Http/Response.php';
-require_once __DIR__.'/Http/Request.php';
-require_once __DIR__.'/Http/Auth/Hmac.php';

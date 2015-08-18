@@ -1,6 +1,6 @@
 <?php
 
-namespace Peanutlabs\SampleApiSDK\Http\Auth;
+namespace PeanutLabs\SampleApiSDK\Http\Auth;
 
 class Hmac {
   

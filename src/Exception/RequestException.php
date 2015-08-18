@@ -1,8 +1,8 @@
 <?php
 
-namespace Peanutlabs\SampleApiSDK;
+namespace PeanutLabs\SampleApiSDK;
 
-require_once __DIR__.'/SDKException.php';
+use PeanutLabs\SampleApiSDK\SDKException;
 
 class RequestException extends SDKException {
   

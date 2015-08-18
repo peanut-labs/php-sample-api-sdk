@@ -1,6 +1,6 @@
 <?php
 
-namespace Peanutlabs\SampleApiSDK;
+namespace PeanutLabs\SampleApiSDK;
 
 class SDKException extends \Exception {
   
