@@ -62,7 +62,6 @@ There are two methods getResponseBody and getHttpStatusCode.
 Example:
 
 ```php
-
 $response_body = $response->getResponseBody();
 $http_status_code = $response->getHttpStatusCode();
 
