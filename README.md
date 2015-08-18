@@ -14,6 +14,7 @@
       }
   ]
 }
+```
 
 #### bootstraping
 In order to use the SDK you need to make sure its classes are autoloaded, composer would normally take care of this, if for some reason this doesn't happen just make sure the SDK's autoload.php file is required at some point.
@@ -64,5 +65,6 @@ Example:
 
 $response_body = $response->getResponseBody();
 $http_status_code = $response->getHttpStatusCode();
+
 ```
 
