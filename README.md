@@ -33,8 +33,10 @@ $client = new Client($advertiser_id, $security_key, $host);
 ```
 
 $advertiser_id is a unique identifier provided to you by Peanut Labs.
+
 $security_key is a secret key provided to you by Peanut Labs.
-$host is the base URI of the Sample API.
+
+$host is the base URI of the Sample API, like 'sample.peanutlabs.com/sample'.
 
 #### Usage
 
@@ -52,7 +54,9 @@ $response = $client->sendRequest($method, $path, $params);
 ```
 
 $method is HTTP method, like GET and POST.
+
 $path is resource, like '/projects/test001'.
+
 $params is all the request params as a php array.
 
 #### Parsing Response
