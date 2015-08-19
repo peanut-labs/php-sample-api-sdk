@@ -21,22 +21,22 @@ In order to use the SDK you need to make sure its classes are autoloaded, compos
 
 Then you need to instantiate a Client object
 
-SDK has its own namespace and the constructor for a Client object has three parameters, $advertiser_id, $security_key and $host.
+SDK has its own namespace and the constructor for a Client object has three parameters, $client_id, $security_key and $host.
 
 Example:
 
 ```php
 use PeanutLabs\SampleApiSDK\Client;
 
-$client = new Client($advertiser_id, $security_key, $host);
+$client = new Client($client_id, $security_key, $host);
 
 ```
 
-$advertiser_id is a unique identifier provided to you by Peanut Labs.
+$client_id is a unique identifier provided to you by Peanut Labs.
 
 $security_key is a secret key provided to you by Peanut Labs.
 
-$host is the base URI of the Sample API, like 'sample.peanutlabs.com/sample'.
+$host is the base URI of the Sample API, like 'http://sample.peanutlabs.com/sample'.
 
 #### Usage
 
@@ -55,7 +55,7 @@ $response = $client->sendRequest($method, $path, $params);
 
 $method is HTTP method, like GET and POST.
 
-$path is resource, like '/projects/test001'.
+$path is the resource path, like '/projects/test001'.
 
 $params is all the request params as a php array.
 
