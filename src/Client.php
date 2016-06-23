@@ -31,6 +31,7 @@ class Client {
     $uri = $this->generateUri($path);
     $auth_header = $this->createAuthHeader($method, $path, $params);
     $this->request->addHeader('Authorization', $auth_header);
+    $this->request->addHeader('Content-Type', 'application/json');
     $this->request->setParams($params);
     $this->request->sendRequest($method, $uri);
     return $this->getResponse();

@@ -98,7 +98,7 @@ class Request {
   }
   
   private function setPostParams(&$options) {
-    $options[CURLOPT_POSTFIELDS] = http_build_query($this->params);
+    $options[CURLOPT_POSTFIELDS] = json_encode($this->params);
     $options[CURLOPT_POST] = true;
   }
   
